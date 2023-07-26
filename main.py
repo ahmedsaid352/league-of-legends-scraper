@@ -121,7 +121,7 @@ def main():
     characters_urls = get_valid_characters_urls(URL, NAME_SELECTOR)
     for char_url in characters_urls:
         audio_data , char_name = get_character_audio_data(char_url)
-        download_char_audio(audio_data[:3], char_name)
+        download_char_audio(audio_data, char_name)
 
 if __name__ == '__main__':
     main()
